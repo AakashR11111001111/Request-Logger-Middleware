@@ -23,7 +23,7 @@ app.get("/api/request-logger",(req, res)=>{
                 ExecutedIn: `${Date.now() - req.execution}ms`,
             }
         })
-    }, Math.floor(Math.random()*3000));
+    }, Math.floor(Math.random()*300));
 })
 
 app.listen(PORT, ()=> console.log(`Server Up and Running on Port ${PORT}`))
