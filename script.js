@@ -26,4 +26,4 @@ app.get("/api/request-logger",(req, res)=>{
     }, Math.floor(Math.random()*3000));
 })
 
-app.listen(PORT, ()=> console.log("Server Up"))
+app.listen(PORT, ()=> console.log(`Server Up and Running on Port ${PORT}`))
