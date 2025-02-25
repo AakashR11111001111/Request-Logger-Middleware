@@ -1,4 +1,4 @@
-# Random Image API
+# Request Logger Middleware
 
 ## API Endpoint
   
