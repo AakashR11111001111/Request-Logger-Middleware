@@ -12,16 +12,15 @@ app.use((req, res, next)=>{
 })
 
 app.get("/api/request-logger",(req, res)=>{
-    res.json({
-        success: true,
-        message: {
-            RequestMethod: req.method,
-            url: `${req.url}`,
-            ip: "::1" ? "127.0.0.1" : req.ip,
-            ExecutedIn: `${Date.now() - req.execution}ms`
-
-        }
-    }) 
+    setTimeout(() => {
+        res.json({
+            success: true,
+            message: {
+                RequestMethod: req.method,
+                url: `${req.url}`,
+                ip: "::1" ? "127.0.0.1" : req.ip,
+                ExecutedIn: `${Date.now() - req.execution}ms`,
+            }
+        })
+    }, Math.floor(Math.random()*3000));
 })
-
-app.listen(1000)
