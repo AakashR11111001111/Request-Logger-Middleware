@@ -26,7 +26,7 @@
 
 ##### Step 1  
 ```sh
- git clone https://github.com/AakashR11111001111/Random-Image-API
+ git clone https://github.com/AakashR11111001111/Request-Logger-Middleware
 ```
 
 ##### Step 2  
