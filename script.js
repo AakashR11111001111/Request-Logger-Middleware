@@ -19,7 +19,7 @@ app.get("/api/request-logger",(req, res)=>{
             message: {
                 RequestMethod: req.method,
                 url: `${req.url}`,
-                ip: "::1" ? "127.0.0.1" : req.ip,
+                ip: req.ip,
                 ExecutedIn: `${Date.now() - req.execution}ms`,
             }
         })
