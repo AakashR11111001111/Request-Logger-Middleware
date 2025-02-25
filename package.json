@@ -2,7 +2,7 @@
   "name": "day-6-homework-request-logging-middleware",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
     "dev": "nodemon script.js",
     "start": "node script.js",

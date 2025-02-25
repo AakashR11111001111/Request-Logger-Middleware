@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+
+app.set("trust proxy",true);
+
 app.use((req, res, next)=>{
     req.execution = Date.now();
     if(true){  
